@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Simple Calculator</title>
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    
+   <div class="center">
+      <h1>Simple Calculator</h1>
+    <h6>First Number</h6>
+ <input name="number1"  type="text" id='num1'/>
+ <br>
+ <h6>Second Number</h6>
+      <input name="number2" type="text" id='num2'/>
+      <br>
+      <button onclick="showresult('1')" class="btn btn-light">+</button>
+      <button onclick="showresult('2')" class="btn btn-light">-</button>
+      <button onclick="showresult('3')" class="btn btn-light">*</button>
+      <button onclick="showresult('4')" class="btn btn-light">/</button>
+      <h6>Result</h6>
+    <input type ="text"id='result' >
+    <br>
+    <button onclick="myFunction()"class = "btn btn-secondary">☾</button>
+    </div>
+   
+      <script src='script.js'></script>
+    </body>
+    </html>
