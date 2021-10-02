@@ -1,0 +1,25 @@
+<div class="container">
+  <h1>Calculator</h1>
+  <h4><label for="firstNumber">First Number</label></h4>
+  <input (input)="getFirstNum(firstNumber.value)" type="text" #firstNumber />
+  <h4><label for="secondNumber">Second Number</label></h4>
+  <input (input)="getSecNum(secondNumber.value)" type="text" #secondNumber />
+  <hr />
+  <div class="btn-group" role="group" aria-label="operations">
+    <button (click)="onAdd()" type="button" class="btn btn-dark">+</button>
+    <button (click)="onSubtract()" type="button" class="btn btn-dark">
+      -
+    </button>
+    <button (click)="onMultiply()" type="button" class="btn btn-dark">
+      x
+    </button>
+    <button (click)="onDivide()" type="button" class="btn btn-dark">
+      ÷
+    </button>
+  </div>
+  <hr />
+  <div *ngIf="result">
+    <h4><label for="result">Result</label></h4>
+    <input type="text" [value]="result" />
+  </div>
+</div>

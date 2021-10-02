@@ -1,0 +1,17 @@
+h1 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  div {
+    text-align: center;
+    font-size: 15px;
+  }
+  .container {
+    text-align: center;
+    width: 30%;
+  }
+  
+  .subcon {
+    width: 30%;
+  }
+  
